@@ -1,4 +1,5 @@
 ##linux 部分常用指令
+...
 ls -l
 ll
 ls -al
@@ -32,9 +33,10 @@ grep 内容  文件名 在某个文件中搜索字符串
 
 git config --list 查看git的配置信息
 history   查看敲过的命令
-
+...
 
 ##git使用流程
+...
 git init
 git clone  克隆远程仓库的文件
 git status 查看文件状态
@@ -88,6 +90,22 @@ git pull origin master
 
 #删除远程仓库地址
 git remote rm origin
+
+#查看提交日志
+git log
+commit 5ec726a6d7dd0c216ec465dfabafbaf0384dec4c
+Author: dingchaolin <18810042351@163.com>
+Date:   Sat Oct 8 12:44:27 2016 +0800
+
+commit 后面的就是此次提交的版本号
+
+#查看本次提交的做了哪些操作
+git show  版本号
+git show  5ec726a6d7dd0c216ec465dfabafbaf0384dec4c
+
+##创建分支
+
+...
 
 
 

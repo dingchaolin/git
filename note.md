@@ -86,6 +86,8 @@ git pull origin master
 如果想要保存 就git add
 不想保存就 git checkout -- node.md 撤销本地的修改
 git checkout -- . 表示当前目录下的所有修改都撤销
+#强制回退到某一版本号
+git reset --hard e070999eec19cbb8674790a0771e6c9b9f62f734
 #删除远程仓库地址
 git remote rm origin
 
@@ -162,6 +164,7 @@ git tag 显示版本号
 
 #帮助
 git commit --help
+
 
 
 

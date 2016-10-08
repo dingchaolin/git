@@ -142,7 +142,12 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 
 
 
+#合并前查看分支的不同
+git diff bug master （bug 指源分支  master 指目标分支）
 
+#另一种分支更新方式 代替 git pull
+git fetch origin
+git rebase origin/master
 
 
 

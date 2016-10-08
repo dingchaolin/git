@@ -121,12 +121,24 @@ git checkout -b bug
 git branch -d mybranch
 #切换到某一分支
 git checkout master
+#此分支提交
+git commmit -am"提交"
 #分支合并
--首先从次分支切换到主分支
---git checkout master
--合并
---git merge master bug  (从bug分支合并到master分支)
+首先从次分支切换到主分支
+git checkout master
+合并
+git merge master bug  (从bug分支合并到master分支)
+#分支合并过程
+1.先在次分支执行 git commit -am""
+2.切换到主分支 git checkout master
+3.合并 git merge master bug
+4.拉取主分支 git pull origin master
+5.合并主分支 git push origin master
 
+#分支作图形化展示
+配置别名
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+配置别名之后 git lg 即可
 
 
 

@@ -36,7 +36,7 @@ history   查看敲过的命令
 
 
 ##git使用流程
-...
+
 git init
 git clone  克隆远程仓库的文件
 git status 查看文件状态
@@ -104,8 +104,26 @@ git show  版本号
 git show  5ec726a6d7dd0c216ec465dfabafbaf0384dec4c
 
 ##创建分支
+分支：
+-master 默认分支
+-develop 开发主干分支
+ -feature 开发的一些分支
+ -bug 修改bug的分支
+-release 上线的分支
 
-    
+#切分支
+git branch newbranch 新建一个分支
+#查看分支
+git branch
+#新建一个分支并且调转到该分支
+git checkout -b bug
+#删除一个分支
+git branch -d mybranch
+#切换到某一分支
+git checkout master
+
+
+
 
 
 

@@ -84,8 +84,8 @@ git pull origin master
 
 当修改了文件之后：
 如果想要保存 就git add
-不想保存就 git checkout -- <file> 撤销本地的修改
-
+不想保存就 git checkout -- node.md 撤销本地的修改
+git checkout -- . 表示当前目录下的所有修改都撤销
 #删除远程仓库地址
 git remote rm origin
 
@@ -137,7 +137,8 @@ git merge master bug  (从bug分支合并到master分支)
 配置别名
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 配置别名之后 git lg 即可
-
+#图形化的工具展示
+sourcetree
 
 
 #合并前查看分支的不同
@@ -147,6 +148,20 @@ git diff bug master （bug 指源分支  master 指目标分支）
 git fetch origin
 git rebase origin/master
 
+#重命名命令
+$ git config --global alias.st status
+$ git config --global alias.ci commit
+$ git config --global alias.co checkout
+$ git config --global alias.br branch
+$ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+#打标签
+git tag 1.1.1 5ec726a6d7dd0c216ec465dfabafbaf0384dec4c
+用一个版本号 对应一个版本tag
+git tag 显示版本号
+
+#帮助
+git commit --help
 
 
 

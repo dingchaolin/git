@@ -165,6 +165,20 @@ git tag 显示版本号
 #帮助
 git commit --help
 
+##npm 设置镜像
+npm config set registry http://registry.npm.taobao.org
+npm config set loglevel=http 方便查看下载进度
+##npm 其他命令
+npm install gulp -g 全局安装
+npm install gulp --save 添加到依赖中
+--save 和 --save-dev的区别
+--save 版本名和版本号记录在dependencies字段
+--svar-dev 版本名和版本号记录在devDependencies字段
+#建议
+项目依赖的模块安装到项目相应的文件中
+
+#生成package.json
+npm init  该命令可以生成一个package.json 命令
 
 
 

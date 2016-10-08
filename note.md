@@ -121,6 +121,12 @@ git checkout -b bug
 git branch -d mybranch
 #切换到某一分支
 git checkout master
+#分支合并
+-首先从次分支切换到主分支
+--git checkout master
+-合并
+--git merge master bug  (从bug分支合并到master分支)
+
 
 
 

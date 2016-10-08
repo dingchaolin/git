@@ -52,8 +52,6 @@ git log 看提交日志
  git remote -v  查看远程查库的地址
   origin  远程仓库的地址
 
-github 账号密码  dingchaolin/wei391519
-
 添加远程仓库地址
 git remote add origin https://github.com/dingchaolin/gitReact.git
 返回结果：

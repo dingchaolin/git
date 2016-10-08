@@ -1,5 +1,5 @@
 ##linux 部分常用指令
-...
+
 ls -l
 ll
 ls -al
@@ -33,7 +33,7 @@ grep 内容  文件名 在某个文件中搜索字符串
 
 git config --list 查看git的配置信息
 history   查看敲过的命令
-...
+
 
 ##git使用流程
 ...
@@ -105,7 +105,7 @@ git show  5ec726a6d7dd0c216ec465dfabafbaf0384dec4c
 
 ##创建分支
 
-...
+    
 
 
 

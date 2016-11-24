@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/dingchaolin/gitReact/issues"
   },
-  "homepage": "https://github.com/dingchaolin/gitReact#readme"
+  "homepage": "https://github.com/dingchaolin/gitReact#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^1.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

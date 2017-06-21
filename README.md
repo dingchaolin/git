@@ -1,44 +1,44 @@
-##linux 部分常用指令
+## linux 部分常用指令
 
-ls -l
-ll
-ls -al
+- ls -l
+- ll
+- ls -al
 
--rw-r--r-- 1 Administrator 197121 0 十月  8 10:46 mynote.txt
--   表示是文件  d表示是目录
-r read  w write  x exec 可执行
-rw-
-r--
-r--
+- rw-r--r-- 1 Administrator 197121 0 十月  8 10:46 mynote.txt
+-   表示是文件  d表示是目录
+- r read  w write  x exec 可执行
+- rw-
+- r--
+- r--
 
-cat  文件名  就能显示文件内容
+- cat  文件名  就能显示文件内容
 
-rm 文件名/文件夹名  删除文件/目录下的所有文件
-rm -rf *.js 循环删除
+- rm 文件名/文件夹名  删除文件/目录下的所有文件
+- rm -rf *.js 循环删除
 
-touch  创建文件
+- touch  创建文件
 
-mkdir  创建文件夹
+- mkdir  创建文件夹
 
-cp  文件的复制
-
-
-cp -R 源目录名   新目录名  创建一个新目录 并将源目录下的文件全部复制扫新目录下
-cp  源文件名    新文件名  复制新文件
+- cp  文件的复制
 
 
-mv  文件名/文件夹  路径    将文件/文件夹移动到目标路径  移动后源文件就没有了 就在新文件夹下
-
-grep 内容  文件名 在某个文件中搜索字符串
-
-git config --list 查看git的配置信息
-history   查看敲过的命令
+-cp -R 源目录名    新目录名  创建一个新目录 并将源目录下的文件全部复制扫新目录下
+-cp  源文件名     新文件名  复制新文件
 
 
-##git使用流程
+-mv  文件名/文件夹  路径     将文件/文件夹移动到目标路径  移动后源文件就没有了 就在新文件夹下
 
-git init
-git clone  克隆远程仓库的文件
+- grep 内容  文件名 在某个文件中搜索字符串
+
+- git config --list 查看git的配置信息
+-history    查看敲过的命令
+
+
+## git使用流程
+
+- git init
+- git clone  克隆远程仓库的文件
 git status 查看文件状态
 git add  文件名
 git add -A  添加全部文件
@@ -165,19 +165,19 @@ git tag 显示版本号
 #帮助
 git commit --help
 
-##npm 设置镜像
-npm config set registry http://registry.npm.taobao.org
-npm config set loglevel=http 方便查看下载进度
-##npm 其他命令
-npm install gulp -g 全局安装
-npm install gulp --save 添加到依赖中
---save 和 --save-dev的区别
---save 版本名和版本号记录在dependencies字段
---svar-dev 版本名和版本号记录在devDependencies字段
-#建议
+## npm 设置镜像
+- npm config set registry http://registry.npm.taobao.org
+- npm config set loglevel=http 方便查看下载进度
+## npm 其他命令
+- npm install gulp -g 全局安装
+- npm install gulp --save 添加到依赖中
+- --save 和 --save-dev的区别
+- --save 版本名和版本号记录在dependencies字段
+- --svar-dev 版本名和版本号记录在devDependencies字段
+# 建议
 项目依赖的模块安装到项目相应的文件中
 
-#生成package.json
+# 生成package.json
 npm init  该命令可以生成一个package.json 命令
 
 

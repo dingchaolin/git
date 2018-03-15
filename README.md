@@ -165,6 +165,7 @@
 #### npm 设置镜像
 - npm config set registry http://registry.npm.taobao.org
 - npm config set loglevel=http 方便查看下载进度
+- npm config set registry https://registry.npmjs.org/
 #### npm 其他命令
 - npm install gulp -g 全局安装
 - npm install gulp --save 添加到依赖中
